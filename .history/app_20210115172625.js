@@ -37,11 +37,8 @@ function calculate() {
 calculate();
 
 swap.addEventListener("click", () => {
-    // accessing  the value of the first currency
   const temp = currencyEl_one.value;
-//   swapping both the first currency and the  second currency
   currencyEl_one.value = currencyEl_two.value;
-//   swapping the value of the second currency with  the first
   currencyEl_two.value = temp;
   calculate();
 });
