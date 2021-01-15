@@ -17,12 +17,10 @@ function calculate() {
   const currency_two = currencyEl_two.value;
 
   fetch(
-    `https://v6.exchangerate-api.com/v6/1fc3a53e3285ffb4990d7d56/latest/${currency_one}`
+    ~https://v6.exchangerate-api.com/v6/1fc3a53e3285ffb4990d7d56/latest/${currency_one}`
   )
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-    });
+    .then((res) => res.Json())
+    .then();
 }
 
 calculate();
