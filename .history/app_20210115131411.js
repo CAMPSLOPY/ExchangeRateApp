@@ -1,7 +1,7 @@
 const currencyEl_one = document.getElementById("currency-one");
 const currencyEl_two = document.getElementById("currency-two");
 const amountEl_one = document.getElementById("amount-one");
-const amountEl_two = document.getElementById("amount-two");
+const amountEl_two = document.getElementById("currency-one");
 const rateEl = document.getElementById("rate");
 const swap = document.getElementById("swap");
 
@@ -10,7 +10,7 @@ function calculate() {}
 
 calculate();
 
-// the event listeners
+
 currencyEl_one.addEventListener("change", calculate);
 amountEl_one.addEventListener("input", calculate);
 currencyEl_two.addEventListener("change", calculate);
