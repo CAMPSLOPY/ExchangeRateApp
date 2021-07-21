@@ -4,6 +4,8 @@ const amountEl_one = document.getElementById("amount-one");
 const amountEl_two = document.getElementById("amount-two");
 const rateEl = document.getElementById("rate");
 const swap = document.getElementById("swap");
+const note_El = document.getElementById('note');
+
 
 // the event listeners
 currencyEl_one.addEventListener("change", calculate);
@@ -26,7 +28,6 @@ function calculate() {
       //   we now have to connect the rate of the first currency
       //  to align with the value of the second currency
       const rate = data.conversion_rates[currency_two];
-
       //   this will display the exchange rate info on the screen
       rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}`;
       amountEl_two.value = (amountEl_one.value * rate).toFixed(2);
@@ -45,3 +46,9 @@ swap.addEventListener("click", () => {
   currencyEl_two.value = temp;
   calculate();
 });
+
+window.addEventListener('change', () =>{
+  calculate();
+note_El.innerHTML = `<p>Thank you for choosing our app 👍 </p>`
+
+})
