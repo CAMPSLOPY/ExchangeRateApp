@@ -49,6 +49,6 @@ swap.addEventListener("click", () => {
 
 window.addEventListener('change', () =>{
   calculate();
-note_El.innerHTML = `<p>Thank you for choosing our app 👍 </p>`
+note_El.innerHTML = `<p>Thank you for using  our conversion app 👍 </p>`
 
 })
